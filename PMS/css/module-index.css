@@ -1,0 +1,106 @@
+a:link {
+    text-decoration: none;
+}
+
+#header{ 
+	background-color: #d3d3d3;
+	width: auto; height: 209px;
+}
+#headerbar
+{
+	background-color: #004A5B;
+	width: auto; height: 20px;
+
+}
+#headerbar a {color: #ffffff;}
+#clock
+{
+	color: #ffffff;
+	margin-left: 320px;
+	float: left;
+}
+#user
+{
+	float: left;
+}
+#loginbar
+{
+	margin-left: 1130px;
+	height: 20px;
+}
+#navtab
+{
+	background-color: #f3f3f3;
+	width: 1083px; height: 25px;
+	margin-left: 128px;
+}
+#navtab a{color: #0077A4;	}
+#tablinks
+{
+	background-color: #0077A4;
+	width: 1083px; height: 35px;
+	margin-left:128px;
+
+}
+#tablinks a{color: #ffffff; margin-left: 17px;}
+#logo
+{
+	margin-left:128px; margin-top: 25px;margin-bottom: 5px;
+}
+#maincontent
+{
+	width: auto; height: 400px;
+	background-color: #fcfcfc;
+
+}
+.left
+{
+	width: 925px; height: 400px;
+	background-color: #f1f1f1;
+	margin-left: 17px;
+	float :left;
+}
+.right
+{
+	width: 280px; height: 400px;
+	background-color: #f1f1f1;
+	float: left;
+	margin-left: 32px;
+}
+#footer
+{
+	width: auto; height: 150px;
+	background-color: #004A5B;
+
+}
+#noffication
+{
+	float: left;
+	margin-top: 4px;
+}
+
+#quicksearch
+{
+	width: 250px; height: 22px;
+	margin-left: 798px;
+	background-color: #ffffff;
+}
+.navlink
+{
+	float: left;
+	margin-left: 30px;
+}
+.menu
+{
+	background-color: #004A5B;
+	text-align: center;
+	height: 30px;
+	border-radius: 2px;
+}
+.menu a{color: #ffffff;}
+.table-right{ margin-top: 5px; width: 282px; }
+.table-left{margin-top: 5px; width: 925px;}
+body
+{
+	background-color: #ededed;
+}
