@@ -13,8 +13,8 @@ if (!defined("ROOT"))
 <div style="float: left; width: 700px;">
 <?php 
 	 try{
-    //$pdh = new PDO("mysql:host=localhost; dbname=quanlyduan"  , "root"  , ""  );
-      $pdh = new PDO("mysql:host=sql312.byethost9.com; dbname=b9_20765567_quanlyduan"  , "b9_20765567"  , "everytimewetouch");
+    $pdh = new PDO("mysql:host=localhost; dbname=b9_20765567_quanlyduan"  , "root"  , ""  );
+     //$pdh = new PDO("mysql:host=sql312.byethost9.com; dbname=b9_20765567_quanlyduan"  , "b9_20765567"  , "everytimewetouch");
     $pdh->query("  set names 'utf8'"  );
   	}
   	catch(Exception $e){

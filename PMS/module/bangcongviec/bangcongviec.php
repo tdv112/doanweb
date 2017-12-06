@@ -13,24 +13,28 @@ if (!defined("ROOT"))
 <body>
 	<?php 
 	 try{
-    //$pdh = new PDO("mysql:host=localhost; dbname=quanlyduan"  , "root"  , ""  );
-      $pdh = new PDO("mysql:host=sql312.byethost9.com; dbname=b9_20765567_quanlyduan"  , "b9_20765567"  , "everytimewetouch");
+    $pdh = new PDO("mysql:host=localhost; dbname=b9_20765567_quanlyduan"  , "root"  , ""  );
+      //$pdh = new PDO("mysql:host=sql312.byethost9.com; dbname=b9_20765567_quanlyduan"  , "b9_20765567"  , "everytimewetouch");
     $pdh->query("  set names 'utf8'"  );
   	}
   	catch(Exception $e){
    	 echo $e->getMessage(); exit;
   	}
+
   	$stm = $pdh->prepare('select * from congviec where matrangthai = "1" ');
 	$stm->execute();
 	$rows = $stm->fetchAll(PDO::FETCH_ASSOC);
 
-	$stm1 = $pdh->prepare('select * from congviec where matrangthai = "2" ');
+	$stm1 = $pdh->prepare("select * from congviec where matrangthai = '2' ");
 	$stm1->execute();
 	$rows1 = $stm->fetchAll(PDO::FETCH_ASSOC);
+	print_r($rows1);
 
-	$stm2 = $pdh->prepare('select * from congviec where matrangthai = "3" ');
+	$stm2 = $pdh->prepare("select * from congviec where matrangthai = '3' ");
 	$stm2->execute();
-	$rows2 = $stm->fetchAll(PDO::FETCH_ASSOC);
+
+	$rows2 = $stm2->fetchAll(PDO::FETCH_ASSOC);
+	print_r($rows2);
 	 ?>
 	<table id="bangcv" border="1px" width="925px">
 		<tr >
